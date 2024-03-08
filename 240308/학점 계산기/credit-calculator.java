@@ -21,10 +21,10 @@ public class Main {
 
         avg = sum/n;
         
-        if(avg > 4.0) {
+        if(avg >= 4.0) {
             grade = "Perfect";
         }
-        else if(avg > 3.0){
+        else if(avg >= 3.0){
             grade = "Good";
         }
         else {
