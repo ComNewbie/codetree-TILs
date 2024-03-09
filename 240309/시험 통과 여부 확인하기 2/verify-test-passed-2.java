@@ -25,7 +25,9 @@ public class Main {
                     }
                 }
             }
+            if(j == student-1){
+                System.out.print(passCount);
+            }
         }
-        System.out.print(passCount);
     }
 }
