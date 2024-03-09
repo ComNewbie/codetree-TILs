@@ -20,7 +20,7 @@ public class Main {
             stop++;
         }
 
-        for(int i=0;i<=stop;i++){
+        for(int i=0;i<stop;i++){
             sum += arr[i];
         }
 
