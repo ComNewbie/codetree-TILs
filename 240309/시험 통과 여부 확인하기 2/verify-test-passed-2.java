@@ -8,11 +8,7 @@ public class Main {
 
         int[] scoreArray = new int[4];
 
-        int th = 0;
-
         int passCount = 0;
-
-        String[] pnf = new String[student];
 
         for(int j=0;j<student;j++){
             int sum = 0;
@@ -21,24 +17,15 @@ public class Main {
                 sum += scoreArray[i];
                 if(i == scoreArray.length-1){
                     if((double) sum/4 >= 60){
-                        pnf[th] = "pass";
+                        System.out.println("pass");
                         passCount++;
                     }
                     else{
-                        pnf[th] = "fail";
+                        System.out.println("fail");
                     }
-                    th++;
                 }
             }
         }
-       
-        for(int i=0;i<pnf.length;i++){
-            System.out.println(pnf[i]);
-            if(i == pnf.length-1){
-                System.out.print(passCount);
-            }
-        }
-
-       
+        System.out.print(passCount);
     }
 }
