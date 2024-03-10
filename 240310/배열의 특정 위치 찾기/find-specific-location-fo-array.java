@@ -17,6 +17,7 @@ public class Main {
             if((i+1) % 2 == 0){
                 evenSum += arr[i];
             }
+            
             if((i+1)%3 == 0){
                 sumMo3 += arr[i]; 
                 countMo3++;
