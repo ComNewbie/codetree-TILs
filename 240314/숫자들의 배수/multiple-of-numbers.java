@@ -7,6 +7,7 @@ public class Main {
         int num = scan.nextInt();
 
         int countMo5 = 0;
+        
         for(int i=1;true;i++){
             System.out.print(num * i+" ");
             if((num * i) % 5 == 0){
