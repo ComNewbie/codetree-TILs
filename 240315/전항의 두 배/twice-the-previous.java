@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int[] arr = new int[2];
+
+        int sum = 0;
+        
+        for(int i=0;i<arr.length;i++){
+            arr[i] = scan.nextInt();
+            System.out.print(arr[i]+" ");
+        }
+
+        for(int i=0;i<8;i++){
+            sum = (2*arr[0]) + arr[1];
+            System.out.print(sum+" ");
+            arr[0] = arr[1];
+            arr[1] = sum;
+        }
+
+        
+
+
+
+    }
+}
