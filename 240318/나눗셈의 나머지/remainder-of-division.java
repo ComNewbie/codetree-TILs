@@ -14,7 +14,7 @@ public class Main {
 
         for(int i=0;true;i++){
             remain[a%b]++;
-            if(a/b == 0){
+            if(a/b == 0 || a/b == 1){
                 break;
             }
             a = a/b;
