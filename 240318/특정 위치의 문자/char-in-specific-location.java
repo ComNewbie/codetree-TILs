@@ -14,7 +14,7 @@ public class Main {
                 break;
             }
             if(i == arr.length-1){
-                System.out.print("none");
+                System.out.print("None");
             }
         }
         
