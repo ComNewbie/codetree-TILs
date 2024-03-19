@@ -17,6 +17,7 @@ public class Main {
             }
             if(count == 3){
                 System.out.print(i+1);
+                break;
             }
         }
     }
