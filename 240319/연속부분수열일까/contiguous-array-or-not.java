@@ -22,8 +22,8 @@ public class Main {
 
         for(int i=0;i<=n1-n2;i++){
             int index = 0;
+            boolean compare = false;
             if(arrA[i] == arrB[0]){
-                boolean compare = false;
                 for(int j=i;j<i+n2;j++){
                     if(arrB[index] == arrA[j]){
                         compare = true;
@@ -38,7 +38,7 @@ public class Main {
                     }
                 }
             }
-            if(i == n1-n2 && index != 0){
+            if(i == n1-n2 && !compare){
                 System.out.print("No");
             }
         }
