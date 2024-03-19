@@ -32,10 +32,10 @@ public class Main {
                     else{
                         break;
                     }
-                    if(j == i+n2-1 && compare){
-                        System.out.print("Yes");
-                        break;
-                    }
+                }
+                if(compare){
+                    System.out.print("Yes");
+                    break;
                 }
             }
             if(i == n1-n2 && !compare){
