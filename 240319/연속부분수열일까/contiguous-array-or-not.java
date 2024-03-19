@@ -19,7 +19,7 @@ public class Main {
         for(int i=0;i<n2;i++){
             arrB[i] = scan.nextInt();
         }
-
+        loop:
         for(int i=0;i<=n1-n2;i++){
             int index = 0;
             boolean compare = false;
@@ -32,11 +32,12 @@ public class Main {
                     else{
                         break;
                     }
+                    if(j == i+n2-1 && compare){
+                        System.out.print("Yes");
+                        break loop;
+                    }
                 }
-                if(compare){
-                    System.out.print("Yes");
-                    break;
-                }
+                
             }
             if(i == n1-n2 && !compare){
                 System.out.print("No");
