@@ -15,7 +15,7 @@ public class Main {
         for(int i=0;i<n1;i++){
             arrA[i] = scan.nextInt();
         } 
-        
+
         for(int i=0;i<n2;i++){
             arrB[i] = scan.nextInt();
         }
@@ -27,6 +27,7 @@ public class Main {
                 for(int j=i;j<i+n2;j++){
                     if(arrB[index] == arrA[j]){
                         compare = true;
+                        index++;
                     }
                     else{
                         break;
@@ -37,7 +38,7 @@ public class Main {
                     }
                 }
             }
-            if(i == n1-n2){
+            if(i == n1-n2 && index != 0){
                 System.out.print("No");
             }
         }
