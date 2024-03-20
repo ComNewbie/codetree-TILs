@@ -8,15 +8,18 @@ public class Main {
 
         int[] arr = new int[N];
 
-        int min = 100;
-
         int num = 0;
+
+        int min = 0;
 
         int count = 0;
 
         for(int i=0;i<N;i++){
             num = scan.nextInt();
             arr[i] = num;
+            if(i == 0){
+                min = arr[i];
+            }
             if(num<min){
                 min = num;
             }
