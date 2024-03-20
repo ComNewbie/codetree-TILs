@@ -39,6 +39,7 @@ public class Main {
             }
             
         }
+        
         for(int i=0;i<newArr.length;i++){
             if(i == 0){
                 max = newArr[i];
