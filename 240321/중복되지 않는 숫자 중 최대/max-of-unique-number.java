@@ -12,11 +12,11 @@ public class Main {
 
         for(int i=0;i<N;i++){
             num = scan.nextInt();
+            if (num == max){
+                max = 0;
+            }
             if(num > max){
                 max = num;
-            }
-            else if (num == max){
-                max = 0;
             }
         }
         if(max == 0){
