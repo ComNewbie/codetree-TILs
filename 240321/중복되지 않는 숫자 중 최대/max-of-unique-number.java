@@ -15,7 +15,7 @@ public class Main {
         }
 
         for(int i=0;i<num.length;i++){
-            if(num[i] == 1 && num[i] > max){
+            if(num[i] == 1 && (i+1) > max){
                 max = i+1;
             }
         }
