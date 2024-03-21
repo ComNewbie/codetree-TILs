@@ -25,8 +25,12 @@ public class Main {
         System.out.print(maxIndex+1+" ");
 
         while(maxIndex != 0){
+
             max = 0;
-            for(int i=0;i<maxIndex;i++){
+
+            int end = maxIndex;
+            
+            for(int i=0;i<end;i++){
                 if(arr[i] > max){
                     max = arr[i];
                     maxIndex = i;
