@@ -41,7 +41,7 @@ public class Main {
                 sum += number[i][j]; 
             }
         } 
-        System.out.print((double) sum/8);
+        System.out.printf("%.1f",(double) sum/8);
 
     }
 }
