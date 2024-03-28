@@ -14,6 +14,7 @@ public class Main {
             arr[scan.nextInt()-1][scan.nextInt()-1] = 1;
         
         }
+        
         for(int[] e : arr){
             for(int f : e){
                 System.out.print(f+" ");
