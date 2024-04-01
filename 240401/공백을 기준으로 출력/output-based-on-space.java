@@ -9,11 +9,8 @@ public class Main {
         str = str.concat(scan.nextLine());
 
         for(int i=0;i<str.length();i++){
-            if(str.charAt(i) == ' '){
-                continue;
-            }
-            else{
-                System.out.print(str.charAt(i));
+            if(str.charAt(i) != ' '){
+               System.out.print(str.charAt(i));
             }
         }
     }
