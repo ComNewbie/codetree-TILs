@@ -9,7 +9,7 @@ public class Main {
         int n = scan.nextInt();
 
         if(n>str.length()){
-                System.out.print(str);
+                System.out.print(str.reverse());
         }
         else{
             for(int i=str.length()-1;i>=str.length()-n;i--){
