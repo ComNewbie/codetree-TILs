@@ -9,7 +9,11 @@ public class Main {
         String purposeStr = scan.next();
 
         for(int i=0;i<=inputStr.length()-purposeStr.length();i++){
-            String comStr = inputStr.charAt(i)+""+inputStr.charAt(i+1);
+            String comStr = "";
+
+            for(int j=0;j<purposeStr.length();j++){
+                comStr += inputStr.charAt(i+j);
+            }
 
             if(comStr.equals(purposeStr)){
                 System.out.print(i);
