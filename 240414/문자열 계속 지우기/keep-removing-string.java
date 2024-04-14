@@ -15,7 +15,7 @@ public class Main {
         while (modified) {
             modified = false; // modified 변수를 초기화
 
-            for (int i = 0; i < result.length()-1; i++) {
+            for (int i = 0; i < result.length()- B.length(); i++) {
                 if (result.substring(i , i + B.length()).equals(B)) {
                     result = result.substring(0, i) + result.substring(i + B.length());
                     modified = true; // result가 변경되었음을 표시
