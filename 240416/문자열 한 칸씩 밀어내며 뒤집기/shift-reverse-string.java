@@ -8,10 +8,8 @@ public class Main {
 
         int q = scan.nextInt();
 
-        int request = 0;
-
         for(int i=0;i<q;i++){
-            request = scan.nextInt();
+            int request = scan.nextInt();
             if(request == 1){
                 str = str.substring(1)+str.charAt(0);
                 System.out.println(str);
