@@ -19,11 +19,8 @@ public class Main {
                 System.out.println(str);
             }
             if(request == 3){
-                String reverse = "";
-                for(int j=str.length()-1;j>=0;j--){
-                    reverse += str.charAt(j);
-                }
-                str = reverse;
+                StringBuffer sb = new StringBuffer(str);
+                str = sb.reverse().toString();
                 System.out.println(str);
             }
         }
