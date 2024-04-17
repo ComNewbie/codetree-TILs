@@ -24,11 +24,12 @@ public class Main {
             }
         }
 
-        if(L > R){
-            System.out.print(A.substring((L-R)) + A.substring(0,(L-R)));
+
+        if(L > R ){
+            System.out.print(A.substring((L-R)%A.length()) + A.substring(0,(L-R)%A.length()));
         }
         else{
-            System.out.print(A.substring(A.length()-(R-L)) + A.substring(0,A.length()-(R-L)));
+            System.out.print(A.substring(A.length()-(R-L)%A.length()) + A.substring(0,A.length()-(R-L)%A.length()));
         }
     }
 }
