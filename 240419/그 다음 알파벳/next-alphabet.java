@@ -6,8 +6,6 @@ public class Main {
 
         char alpha = scan.next().charAt(0);
         
-        System.out.print((int) 'z');
-
         if(alpha == 'z'){
             System.out.print('a');
         }
