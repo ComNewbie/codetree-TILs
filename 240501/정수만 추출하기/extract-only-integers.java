@@ -15,6 +15,9 @@ public class Main {
         for(int i=0;i<firstStr.length();i++){
             char number = firstStr.charAt(i);
             if(number >= 48 && number <= 57){
+                 if(i == firstStr.length()-1){
+                    firstNum = Integer.valueOf(firstStr);
+                }
                 continue;
             }
             firstNum = Integer.valueOf(firstStr.substring(0,i));
@@ -24,6 +27,9 @@ public class Main {
         for(int i=0;i<secondStr.length();i++){
             char number = secondStr.charAt(i);
             if(number >= 48 && number <= 57){
+                if(i == secondStr.length()-1){
+                    secondNum = Integer.valueOf(secondStr);
+                }
                 continue;
             }
             secondNum = Integer.valueOf(secondStr.substring(0,i));
