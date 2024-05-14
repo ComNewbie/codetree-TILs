@@ -11,7 +11,7 @@ public class Main {
         int count = 0;
 
         for(int i=0;i<n;i++){
-            String str = scan.nextLine();
+            String str = scan.next();
             if(str.equals(A)){
                 count++;
             }
