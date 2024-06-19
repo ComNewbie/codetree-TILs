@@ -6,7 +6,7 @@ public class Main {
 
         
 
-        for(int i=0;i<11;i++){
+        for(;;){
             String str = scan.nextLine();
             StringBuffer sb = new StringBuffer(str);
             if(str.equals("END")){
