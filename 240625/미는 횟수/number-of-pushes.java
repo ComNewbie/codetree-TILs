@@ -10,7 +10,7 @@ public class Main {
         for (int i = 0; i < A.length(); i++) {
             if (A.charAt(i) == B.charAt(0)) {
                 if (A.substring(i).concat(A.substring(0, i)).equals(B)) {
-                    System.out.print(i);
+                    System.out.print(A.length()-i);
                     return;
                 }
             }
