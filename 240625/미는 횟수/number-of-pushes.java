@@ -11,6 +11,7 @@ public class Main {
             if (A.charAt(i) == B.charAt(0)) {
                 if (A.substring(i).concat(A.substring(0, i)).equals(B)) {
                     System.out.print(i);
+                    return;
                 }
             }
         }
