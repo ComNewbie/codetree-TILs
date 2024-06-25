@@ -5,19 +5,15 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         String A = scan.nextLine();
-
         String B = scan.nextLine();
 
-        for(int i=0;i<A.length();i++){
-            if(A.charAt(i) == B.charAt(0)){
-                if(A.substring(i).concat(A.substring(0,i)).equals(B)){
+        for (int i = 0; i < A.length(); i++) {
+            if (A.charAt(i) == B.charAt(0)) {
+                if (A.substring(i).concat(A.substring(0, i)).equals(B)) {
                     System.out.print(i);
-                    break;
                 }
             }
-            if(i==A.length()-1){
-                System.out.print(-1);
-            }
         }
+        System.out.print(-1);
     }
 }
