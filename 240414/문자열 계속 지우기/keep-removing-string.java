@@ -15,9 +15,9 @@ public class Main {
         while (modified) {
             modified = false; // modified 변수를 초기화
 
-            for (int i = 0; i <= result.length()- B.length(); i++) {
-                if (result.substring(i , i + B.length()).equals(B)) {
-                    result = result.substring(0, i) + result.substring(i + B.length());
+            for (int i = 0; i < result.length()-1; i++) {
+                if (result.substring(i - (B.length()-1), i + (B.length()-1)).equals(B)) {
+                    result = result.substring(0, i - (B.length()-1)) + result.substring(i + (B.length()-1));
                     modified = true; // result가 변경되었음을 표시
                     break; // for 루프를 중단하고 while 루프의 조건을 다시 검사
                 }
